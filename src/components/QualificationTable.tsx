@@ -9,7 +9,7 @@ const QualificationTable: React.FC<QualificationTableProps> = ({
   qualifications,
 }) => {
   return (
-    <table className="table-fixed w-full text-left">
+    <table className="table-fixed w-full text-left ">
       <thead>
         <tr>
           <th className="p-2 border-b">Name</th>

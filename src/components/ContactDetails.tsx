@@ -8,7 +8,7 @@ interface PageProps {
 
 const ContactDetails = ({ email, phone }: PageProps) => {
   return (
-    <div className="p-2 border-[1px] rounded-lg overflow-hidden">
+    <div className="p-2 border-[1px] rounded-lg overflow-hidden md:flex-1 lg:flex-1">
       <h3 className="text-xl flex justify-between mb-4 relative">
         Contact Details:{" "}
         <span className="absolute top-[-15px] right-[-15px] flex justify-center items-center text-black bg-white w-10 h-10 rounded-full">
