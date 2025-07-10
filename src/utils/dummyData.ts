@@ -29,7 +29,7 @@ export const dummyTeacher: Teacher = {
     {
       date: "2025-07-09",
       fromTime: "14:00",
-      toTime: "14:45",
+      toTime: "14:30",
     },
     {
       date: "2025-07-11",
