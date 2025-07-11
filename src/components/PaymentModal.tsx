@@ -19,7 +19,6 @@ const PaymentModal: React.FC<PaymentProps> = ({ onClose, bookingDetails }) => {
   const [upiId, setUpiId] = useState("");
 
   const handlePayment = () => {
-    // mock payment flow
     alert("Payment successful!");
     onClose();
   };
@@ -60,14 +59,6 @@ const PaymentModal: React.FC<PaymentProps> = ({ onClose, bookingDetails }) => {
           onChange={(e) => setUpiId(e.target.value)}
           className="w-full border rounded px-3 py-2 mb-4"
         />
-
-        {/* Optional: QR Payment Section */}
-        {/* <div className="bg-gray-100 rounded p-4 text-center text-gray-600 text-sm">
-          OR scan the QR with any UPI app
-          <div className="mt-2">
-            <img src="/placeholder-qr.png" alt="QR Code" className="mx-auto w-32 h-32" />
-          </div>
-        </div> */}
 
         <button
           onClick={handlePayment}
