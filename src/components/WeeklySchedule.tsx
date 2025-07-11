@@ -49,7 +49,7 @@ export default function WeeklySchedule({
   return (
     <div className="border rounded-lg">
       {/* Fixed Header */}
-      <div className="sticky top-0 z-40 bg-black text-white py-2 px-4">
+      <div className="sticky top-0 z-40 bg-[#14213d] text-white py-2 px-4">
         <div className="max-w-[1000px] mx-auto flex justify-between items-center">
           <button
             onClick={goToPrevWeek}
@@ -71,12 +71,12 @@ export default function WeeklySchedule({
 
       <div className="h-[600px] overflow-auto ">
         <div className="min-w-[900px]  grid grid-cols-[80px_repeat(7,minmax(120px,1fr))]">
-          <div className="sticky top-0 left-0 z-30 bg-black border border-gray-300" />
+          <div className="sticky top-0 left-0 z-30 bg-[#14213d] border border-gray-300" />
 
           {days.map((day, i) => (
             <div
               key={day}
-              className="sticky top-0 z-30 text-center text-sm font-semibold py-2 bg-black border border-gray-300"
+              className="sticky top-0 z-30 text-center text-sm font-semibold py-2 bg-[#14213d] border border-gray-300"
             >
               {day}
               <br />
@@ -88,7 +88,7 @@ export default function WeeklySchedule({
 
           {timeSlots.map((time, rowIndex) => (
             <React.Fragment key={time}>
-              <div className="sticky left-0 z-20 text-xs text-gray-200 bg-black border border-gray-300 text-right pr-2 py-1 h-[40px]">
+              <div className="sticky left-0 z-20 text-xs text-gray-200 bg-[#14213d] border border-gray-300 text-right pr-2 py-1 h-[40px]">
                 {time}
               </div>
 
