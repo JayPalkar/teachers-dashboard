@@ -41,5 +41,11 @@ export const dummyTeacher: Teacher = {
       fromTime: "10:30",
       toTime: "11:15",
     },
+    // date in next week monday
+    {
+      date: "2025-07-14",
+      fromTime: "10:30",
+      toTime: "12:30",
+    },
   ],
 };
