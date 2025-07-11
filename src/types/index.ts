@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Qualification {
   name: string;
   rate: number;
@@ -12,6 +14,7 @@ export interface ScheduleSlot {
 export interface Teacher {
   id: string;
   name: string;
+  profileImage: string | StaticImageData;
   role: string;
   birthDate: string;
   email: string;

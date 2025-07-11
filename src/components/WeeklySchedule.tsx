@@ -48,7 +48,6 @@ export default function WeeklySchedule({
 
   return (
     <div className="border rounded-lg">
-      {/* Fixed Header */}
       <div className="sticky top-0 z-40 bg-[#14213d] text-white py-2 px-4">
         <div className="max-w-[1000px] mx-auto flex justify-between items-center">
           <button
@@ -111,14 +110,12 @@ export default function WeeklySchedule({
                       return (
                         <div
                           key={i}
-                          className="absolute  inset-x-1 bg-blue-500 text-white text-xs p-1  z-10"
+                          className="absolute  inset-x-1 bg-green-300 text-white text-xs p-1  z-10"
                           style={{
                             top: 0,
                             height: `${rowSpan * 40}px`,
                           }}
-                        >
-                          {slot.fromTime} - {slot.toTime}
-                        </div>
+                        ></div>
                       );
                     })}
                 </div>
